@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1A1830;
+  color: #FDFDFE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #B15DE8;
+}
+
+
+.site {
+  border-style: dotted;
+  border-color: #FDFDFE;
+  border-width: 1px;
+  overflow: auto;
+}
+
+.createTask {
+  display: flex;
+  justify-content: center;
+}
+
+.inputTask {
+  width: 30rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #211f3a;
+  color: #FDFDFE;
+}
+
+.inputTask::placeholder {
+  color: #FDFDFE;
+}
+
+button#addTask {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  align-items: center;
+  background-color: #1A1830;
+  font-size: 1rem;
+  color: #FDFDFE;
+}
+
+.todo {
+  width: 40rem;
+  height: 30rem;
+}
+
+.done {
+  width: 40rem;
+  height: 10rem;
+}
+
+.task {
+  width: 39rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #211f3a;
+}
+
+.options > button {
+  background-color: transparent;
+  border: none;   
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #FDFDFE;
+  margin: 1rem;
+}
+
+button:hover>.icon{
+  fill: #B15DE8;
+}
+
+#nameTask {
+  background-color: transparent;
+  color: #FDFDFE;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .site, .todo, .done, .task {
+      width: 90%; /* Reduzir a largura em telas menores */
+  }
+
+  .inputTask {
+      width: calc(100% - 2rem); /* Reduzir a largura do inputTask em telas menores */
+  }
+}

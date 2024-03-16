@@ -1,0 +1,33 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "task list, ftt challanger",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/YuriiSouza/list.git"
+  },
+  "author": "Yuri Peixoto de Souza",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/YuriiSouza/list/issues"
+  },
+  "homepage": "https://github.com/YuriiSouza/list#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "http-errors": "~1.6.3",
+    "knex": "^3.1.0",
+    "morgan": "~1.9.1",
+    "objection": "^3.1.4",
+    "pug": "^3.0.2",
+    "sqlite3": "^5.1.7",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
