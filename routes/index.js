@@ -69,6 +69,8 @@ router.get('/', async (req, res, next) => {
   } catch(error) {
     console.error('Erro ao coletar dados das tarefas:', error);
     res.status(500).send('Erro ao coletar dados das tarefas');
+    tasks = []
+    res.render('index', { tasks });
   }
 });
 
