@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-body {
+main {
   font-size: 16px;
   width: 100vw;
   height: 100vh;
@@ -46,7 +45,7 @@ button:hover {
 }
 
 .inputTask::placeholder {
-  color: #FDFDFE;
+  color: #FDFDFE; 
 }
 
 button#addTask {
@@ -94,7 +93,7 @@ button#addTask {
 }
 
 button:hover>.icon{
-  fill: #B15DE8;
+  fill: #B15DE8;  
 }
 
 #nameTask {
@@ -105,11 +104,11 @@ button:hover>.icon{
 }
 
 @media screen and (max-width: 768px) {
-  .site, .todo, .done, .task {
-      width: 90%; /* Reduzir a largura em telas menores */
+    .site, .todo, .done, .task {
+        width: 90%; /* Reduzir a largura em telas menores */
   }
 
   .inputTask {
-      width: calc(100% - 2rem); /* Reduzir a largura do inputTask em telas menores */
+        width: calc(100% - 2rem); /* Reduzir a largura do inputTask em telas menores */
   }
 }
